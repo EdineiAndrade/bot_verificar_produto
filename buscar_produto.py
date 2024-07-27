@@ -100,7 +100,7 @@ def tarefa_programada():
     send_email(df_produto,product_info,path_file)
     print(colored("====>> Busca atual finalizada!!",'green'))
 # Agendar a tarefa para ser executada
-schedule.every(2).seconds.do(tarefa_programada)
+schedule.every(30).minutes.do(tarefa_programada)
 
 # Loop para manter o script em execução e verificar o agendamento
 while True:
