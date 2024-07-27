@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  chrome-python:
+    build: .
+    container_name: chrome-python-container
+    volumes:
+      - .:/app
+    environment:
+      - DEBIAN_FRONTEND=noninteractive
+    command: python3 /app/buscar_produto.py

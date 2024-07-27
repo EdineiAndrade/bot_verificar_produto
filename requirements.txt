@@ -1,0 +1,7 @@
+python-dotenv
+selenium
+webdriver-manager
+pandas
+openpyxl
+schedule
+termcolor
